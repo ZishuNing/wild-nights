@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        /* 禁止页面滑动 */
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Ubuntu, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: #1f2049;
+            color: #1f2049;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* 禁止页面滚动 */
+        }
+
+        /* 使用 Flexbox 实现三栏布局 */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            margin: 0 10px;
+            max-height: 100%;
+            overflow-y: auto;
+            border: 2px solid #1f2049;
+            /* 给每个栏位添加边框 */
+            border-radius: 8px;
+            /* 边框圆角 */
+            background-color: #1f2049;
+            /* 给栏位添加背景色 */
+        }
+
+        /* 样式调整 */
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        strong {
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        /* 响应式调整 */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 1em;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 灯塔栏目 -->
+        <div class="column">
+            <section>
+                <p><strong>灯塔</strong></p>
+                <p>入夜，一浪比一浪伸得更长，风啊，也和着它的嚣张。</p>
+                <p>我执于，属于昼的光是弥散的，众生的；而属于夜的光总有一束，是为我的。风呼，最北角有光，向北去；浪呼，他多坚实啊，来仰望。</p>
+                <p>在最南的岛上，立于最北的海角，我认识了它的象征，限于他的全貌。</p>
+                <p>我说我要找灯塔。</p>
+                <p>再晚些，再晚些，夜要足够深，海要足够深，才能探过光。</p>
+                <p>风浪不顾我，礁石嶙峋，触伤了手脚。近了，近了，惊扰了，多肢的寄居客。他不说，也不明，却也不可进。</p>
+                <p>我就是为你来的。</p>
+                <p>让我进去吧，让我停留一束光，让她们回到方舟上。</p>
+            </section>
+        </div>
+
+        <!-- 海妖栏目 -->
+        <div class="column">
+            <section>
+                <p><strong>海妖</strong></p>
+                <p>你们只看得见潮汐一日两次涨两次落，夜鬼浪荡，所谓潮力不过都是我的欲念，一次次涌进溢出，我等着等潮的他们，肌体肿胀心乱了体液粘稠了，翻涌着让他们的生命淌进我的生命，他们甘之如饴，为了生。</p>
+                <p>你既然要涉过黑夜，就享用无光的恐惧吧，光是你体内的趋性，你那样失神被他牵着。岩壁上的密密麻麻的触会在涨潮时生出细细长长的须爪来，你也要生出自己无数绵长的知觉才能看清啊，才能回到那种忘忧的快慰中。</p>
+                <p>你可知离开只是外在的，穿过岸的边界还没到陆的边界，你要走向方舟还要吃好些苦头，轻信一种位移的自由，太轻巧。</p>
+                <p>哈，看看，那高塔的威严无与伦比啊，他纯粹也无心来来回回探照着掠过略过你的渴求，不做停留不带温度不含浪漫或深与，不不不不，他要比那些零零点点停留的光更善呢。</p>
+                <p>光也是鱼群的趋性，锚定猎场的渔船吐出细细密密的巨网再从伸展的肢节末端散开，光，数百枚光都是为了她们点亮蒸腾附着冥冥，数千目的刺网滤过孱弱捞起浑然无知，光收了束紧了出水了光溅在甲板上鳞鳞，多珍馐。</p>
+                <p>呵，听啊，我不再是我，我成了她，也成了海上的每一个失物，凭空孕育整片海的女人啊，应该首先唱出一首毁灭一切的歌，人啊以无尽的生之苦为海，一次次离去，不知周而复始最为残忍，你却要返回。</p>
+                <p>让我涌向你，光消弭成一种纯粹，没有间隙不分彼此，我们的交融让万物归一。不顾风浪吧，今夜你若是和我一起，才是一种豪奢。</p>
+                <p>听啊，回声</p>
+                <p>今夜愿你停泊，我将隐在日出潮落。</p>
+            </section>
+        </div>
+
+        <!-- 渔获栏目 -->
+        <div class="column">
+            <section>
+                <p><strong>渔获</strong></p>
+                <p>昨夜昏暗，星沉了下去，鱼就跳了上来，潮是她的网，光是他的饵，瞭望塔听从瞭望塔，渔灯破译了渔灯，一夜丰捕。</p>
+                <p>天刚蒙蒙亮，潮退去船也回港了，男人们也退下去了，渔婆们接过鱼货，手上的活儿麻利灵巧，分鱼、装箱、放冰，每一尾鱼她们都识得。手指抚过鱼鳃，扇着一张一和，像探到了海的脉搏。</p>
+                <p>“好鱼、好鱼、感谢婆祖馈赠”</p>
+                <p>鲛鱼底下翻上来一个泡皱了的苹果，浸满滑腻咸腥，渔婆脱下手套，拿起来放手心用力擦了擦，心想，这是一个好兆头。</p>
+                <p>“好果、好果、感谢婆祖馈赠”</p>
+                <p>鱼尾啪嗒，鱼鳞沙沙，她们在一浪和一浪的间歇中数上拍子，哼出声来：</p>
+                <p>海生鱼唻，鱼生潮哎，婆祖的网唛密密绕哎～</p>
+                <p>潮生心唻，心生念哎，渔婆的歌唛悄悄绕哎～</p>
+                <p>挑上鱼货赶着鲜活卖上好价，赶着日中做好午饭，再赶在日落前补好渔网，潮声不息，她们便也不休，为了生。</p>
+                <p>为了下一夜丰捕，渔婆想着，风平浪静好也是不好，这祈愿许下是也不是。</p>
+                <p>听啊，潮生心唻，心生念哎，又哼出了声……</p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // 潮汐数据
+        const tidalData = [-41, -28, -19, -11, -2, 9, 22, 35, 51, 69, 82, 89, 87, 78, 58, 30, 0, -30, -58, -70, -88, -87, -81, -69, -54, -38, -25, -16, -7, 3, 15, 28, 43, 62, 79, 92, 95, 91, 78, 51, 20, -11, -42, -68, -86, -92, -88, -79, -65, -48, -32, -20, -13, -4, 6, 19, 31, 47, 66, 83, 93, 94, 88, 72, 44, 11, -21, -52, -76, -90, -91, -85];
+
+        let prevValue = 0;
+        let index = 0;
+
+        function changeUnicode() {
+            // 获取所有文本节点
+            const textNodes = getPNode(document.body);
+            if (index >= tidalData.length) {
+                index = 0;  // 重置数据循环
+            }
+
+            const currentValue = tidalData[index];
+            const delta = currentValue - prevValue; // 差值
+            prevValue = currentValue;
+
+            // 随机选择一个文本节点
+            // for (let i = 0; i < 1000; i++) {
+            const randomNode = textNodes[Math.floor(Math.random() * textNodes.length)];
+
+            if (randomNode) {
+                // 随机选择一个字符位置
+                const randomCharIndex = Math.floor(Math.random() * randomNode.textContent.length);
+                const char = randomNode.textContent[randomCharIndex];
+
+                // 获取字符的Unicode码
+                const charCode = char.charCodeAt(0);
+
+                // 修改字符的Unicode值
+                const newChar = String.fromCharCode(charCode + delta);
+                randomNode.textContent = randomNode.textContent.substring(0, randomCharIndex) + newChar + randomNode.textContent.substring(randomCharIndex + 1);
+            }
+            // }
+
+            index++;
+        }
+
+        function getPNode(root) {
+            let textNodes = [];
+
+            function recurse(node) {
+                // 如果当前节点是 <p> 标签或其子节点
+                if (node.tagName === 'P' && node.nodeType === 1) { // nodeType === 1 表示元素节点
+                    // 遍历 <p> 标签的所有子节点
+                    for (let child of node.childNodes) {
+                        handleChild(child);
+                    }
+                } else {
+                    // 对非 <p> 标签的元素，继续递归其子节点
+                    for (let child of node.childNodes) {
+                        recurse(child);
+                    }
+                }
+            }
+
+            function handleChild(node) {
+                if (node.nodeType === 3) { // 文本节点
+                    textNodes.push(node);
+                } else if (node.nodeType === 1) { // 元素节点
+                    // 递归处理子元素的子节点
+                    for (let subChild of node.childNodes) {
+                        handleChild(subChild);
+                    }
+                }
+            }
+            // 从根节点开始遍历
+            recurse(root);
+
+            return textNodes;
+        }
+
+        // 计算当前时间到指定时期的小时数
+        function calculateHoursUntilTarget() {
+            const targetDate = new Date('2024-12-30T00:00:00');
+            const now = new Date();
+            const diffInMilliseconds = now - targetDate; // 计算与当前时间的差
+            return Math.abs(Math.floor(diffInMilliseconds / (1000 * 60 * 60)));  // 转换为小时并取绝对值
+        }
+
+
+        // changeUnicode
+        let hoursUntilTarget = calculateHoursUntilTarget();
+
+        for (let i = 0; i < hoursUntilTarget; i++) {
+            changeUnicode();
+        }
+    </script>
+</body>
+
+</html>
