@@ -2,6 +2,10 @@
 <html lang="zh">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -9,7 +13,7 @@
     <style>
         /* 禁止页面滑动 */
         body {
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Ubuntu, 'Helvetica Neue', sans-serif;
+            font-family: 'Chocolate Classical Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Ubuntu, 'Helvetica Neue', sans-serif;
             line-height: 1.6;
             background-color: #1f2049;
             color: #1f2049;
@@ -41,6 +45,7 @@
             /* 边框圆角 */
             background-color: #1f2049;
             /* 给栏位添加背景色 */
+            overflow: hidden;
         }
 
         /* 样式调整 */
@@ -51,13 +56,13 @@
         }
 
         p {
-            font-size: 1em;
-            margin-bottom: 15px;
+            font-size: 0.83vw;
+            margin-bottom: 1vh;
         }
 
         strong {
             font-weight: 600;
-            font-size: 1.2em;
+            font-size: 1vw;
         }
 
         /* 响应式调整 */
@@ -97,6 +102,8 @@
                 <p>风浪不顾我，礁石嶙峋，触伤了手脚。近了，近了，惊扰了，多肢的寄居客。他不说，也不明，却也不可进。</p>
                 <p>我就是为你来的。</p>
                 <p>让我进去吧，让我停留一束光，让她们回到方舟上。</p>
+                <br>
+                <p>&lt;离岸的女人，你到了岸的边界 。汹涌如镜 ，她和她的海洋会毁了你&gt;</p>
             </section>
         </div>
 
@@ -109,10 +116,13 @@
                 <p>你可知离开只是外在的，穿过岸的边界还没到陆的边界，你要走向方舟还要吃好些苦头，轻信一种位移的自由，太轻巧。</p>
                 <p>哈，看看，那高塔的威严无与伦比啊，他纯粹也无心来来回回探照着掠过略过你的渴求，不做停留不带温度不含浪漫或深与，不不不不，他要比那些零零点点停留的光更善呢。</p>
                 <p>光也是鱼群的趋性，锚定猎场的渔船吐出细细密密的巨网再从伸展的肢节末端散开，光，数百枚光都是为了她们点亮蒸腾附着冥冥，数千目的刺网滤过孱弱捞起浑然无知，光收了束紧了出水了光溅在甲板上鳞鳞，多珍馐。</p>
-                <p>呵，听啊，我不再是我，我成了她，也成了海上的每一个失物，凭空孕育整片海的女人啊，应该首先唱出一首毁灭一切的歌，人啊以无尽的生之苦为海，一次次离去，不知周而复始最为残忍，你却要返回。</p>
+                <span style="margin-right: 5vw;">&lt;</span>
+                <span style="margin-left: 10vw;">&gt;</span>
+                <p>呵，听啊，我不再是我，我成了她，也成了海上的每一个失物，凭空孕育整片海的女人啊，应该首先唱出一首毁灭一切的歌，人啊以无尽的生之苦为海，一次次离去，不知周而复始最为残忍，你却要返回。
+                </p>
                 <p>让我涌向你，光消弭成一种纯粹，没有间隙不分彼此，我们的交融让万物归一。不顾风浪吧，今夜你若是和我一起，才是一种豪奢。</p>
                 <p>听啊，回声</p>
-                <p>今夜愿你停泊，我将隐在日出潮落。</p>
+                <p>&lt;今夜愿你停泊，我将隐在日出潮落&gt;</p>
             </section>
         </div>
 
@@ -210,7 +220,7 @@
 
         // 计算当前时间到指定时期的小时数
         function calculateHoursUntilTarget() {
-            const targetDate = new Date('2024-12-30T00:00:00');
+            const targetDate = new Date('2025-01-04T00:00:00');
             const now = new Date();
             const diffInMilliseconds = now - targetDate; // 计算与当前时间的差
             return Math.abs(Math.floor(diffInMilliseconds / (1000 * 60 * 60)));  // 转换为小时并取绝对值
